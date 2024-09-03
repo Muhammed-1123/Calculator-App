@@ -20,6 +20,7 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+    
 }
 
 .display {
@@ -41,13 +42,8 @@ button {
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 20px;
-    border-bottom: 2px solid rgb(179, 177, 177);
+    border-bottom: 1px solid rgb(179, 177, 177);
 }
-
-.display .current-operand {
-    font-size: 3rem;
-}
-
 .raw-1, .raw-2, .raw-3, .raw-4, .raw-5 {
     display: flex;
     justify-content: center;
@@ -62,12 +58,16 @@ button {
     border-radius: 50%;
     background-color: transparent;
     color: white;
+    border: 1px solid rgb(179, 177, 177);
+    box-shadow: 0 0 7px rgb(179, 177, 177);
 }
 
 .raw-1 button, .raw-2 button:last-child, .raw-3 button:last-child, .raw-4 button:last-child, .raw-5 button:last-child {
     background-color: rgb(219, 175, 15);
     color: #000000;
     font-size: 1.5rem;
+    box-shadow: 0 0 7px rgb(221, 219, 139);
+
 }
 
 .raw-1 button:hover, .raw-2 button:hover, .raw-3 button:hover, .raw-4 button:hover, .raw-5 button:hover {
