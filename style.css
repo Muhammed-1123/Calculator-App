@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.display .result {
+    font-size: 2rem;
+    color: rgb(206, 210, 212);
+    background-color: rgb(55, 55, 55);
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(179, 177, 177);
+}
+
+.display .current-operand {
+    font-size: 3rem;
+}
+
+.raw-1, .raw-2, .raw-3, .raw-4, .raw-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.raw-1 button, .raw-2 button, .raw-3 button, .raw-4 button, .raw-5 button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+}
+
+.raw-1 button, .raw-2 button:last-child, .raw-3 button:last-child, .raw-4 button:last-child, .raw-5 button:last-child {
+    background-color: rgb(219, 175, 15);
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+.raw-1 button:hover, .raw-2 button:hover, .raw-3 button:hover, .raw-4 button:hover, .raw-5 button:hover {
+    background-color: rgb(129, 130, 125);
+}
+
+.raw-1 button:active, .raw-2 button:active, .raw-3 button:active, .raw-4 button:active, .raw-5 button:active {
+    transform: scale(0.98);
+}
+.raw-5 .equal {
+    width: 130px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgb(151, 120, 7);
+}
+
+
+
+
